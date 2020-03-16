@@ -32,7 +32,7 @@ router.get('/ssc', function(req, res, next) {
 router.get('/zeitenBib', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/oeffnungszeiten.html";
-  res.send('ok: zeitenBib');
+  res.send("ok: zeitenBib");
 });
 
 /* GET users listing. */
