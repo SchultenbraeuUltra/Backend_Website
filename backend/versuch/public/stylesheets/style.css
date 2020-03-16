@@ -1,0 +1,49 @@
+/* Logo grün: #7eba4f */
+body {
+  padding: 50px;
+  /*font: 14px "Calibri Light", Helvetica, Arial, sans-serif;
+  text-align: center;*/
+}
+
+a {
+  color: #00B7FF;
+  
+}
+
+p {
+  font-size: 30px;
+  font-family: Sans-serif;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 30%;
+}
+
+.logo-small {
+  width: 10%;
+}
+
+.button {
+  background-color: #7eba4f;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: Sans-serif;
+  cursor: pointer;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 5%;
+}
