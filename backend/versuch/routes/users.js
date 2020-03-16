@@ -39,6 +39,7 @@ router.get('/zeitenBib', function(req, res, next) {
 router.get('/adresse', function(req, res, next) {
   CHANGE = "0";
   console.log(CHANGE);
+  console.log(ADRESSE);
   res.send(ADRESSE);
 });
 
