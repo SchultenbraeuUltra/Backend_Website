@@ -17,21 +17,21 @@ router.get('/hallo', function(req, res, next) {
 /* GET users listing. */
 router.get('/dekan', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = './webseiten/kompletteSeite/startbootstrap-small-business-gh-pages/dekan.html';
+  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/dekan.html";
   res.send('ok: dekan');
 });
 
 /* GET users listing. */
 router.get('/ssc', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = './webseiten/kompletteSeite/startbootstrap-small-business-gh-pages/index.html'
+  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
   res.send('ok: ssc');
 });
 
 /* GET users listing. */
 router.get('/zeitenBib', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = './webseiten/kompletteSeite/startbootstrap-small-business-gh-pages/oeffnungszeiten.html'
+  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/oeffnungszeiten.html";
   res.send('ok: zeitenBib');
 });
 
