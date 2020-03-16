@@ -38,6 +38,7 @@ router.get('/zeitenBib', function(req, res, next) {
 /* GET users listing. */
 router.get('/adresse', function(req, res, next) {
   CHANGE = "0";
+  console.log(CHANGE);
   res.send(ADRESSE);
 });
 
