@@ -1,0 +1,48 @@
+.info {
+	text-align: center;
+	font-family: Sans-serif;	
+	margin-bottom: 3rem;
+}
+
+.einleitung {
+	text-align: center;
+	font-family: Sans-serif;
+	font-size: 20px;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5rem;
+	width: 10%;
+}
+
+.button {
+  background-color: #7eba4f;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: Sans-serif;
+  cursor: pointer;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 7%;
+
+}
+
+.footer {
+	font-size: 12px;
+	text-align: center;
+	font-family: Sans-serif;
+	padding-top: 2rem;
+}
+

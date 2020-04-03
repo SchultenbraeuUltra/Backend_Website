@@ -12,6 +12,26 @@ body {
 	text-align: center;
 }
 
+#profheadline {
+	text-align: center;
+}
+
+#profname{
+	font-weight:300!important
+}
+
+#profjob{
+	font-weight:lighter!important
+}
+
+#profadress{
+	font-weight:lighter!important
+}
+
+#profcontact{
+	font-weight:lighter!important
+}
+
 .container-dekan {
   margin-left: 100px; 
 }
@@ -20,9 +40,34 @@ p.thick {
 	font-weight: bold;
 }
 
-.logo {
+#logo {
 	padding-top: 20px;
 
+}
+
+#variablesBild {
+	width: 400px;
+	box-shadow: 5px 5px 10px silver;
+}
+
+#unterueberschrift{
+	font-weight:lighter!important
+}
+
+#roomheadline {
+	text-align: center;
+}
+
+#roomname {
+	font-weight:lighter!important
+}
+
+p#markierterText {
+	font-weight: bold;
+}
+
+#monroomtime {
+	font-weight:lighter!important
 }
 
 .map {
