@@ -1,9 +1,9 @@
 console.log("Frontend geladen");
 
-var adresse = 'ai-info.informatik.hs-fulda.de:443/htdocs/start.html';
+var adresse = 'http://ai-info.informatik.hs-fulda.de:443/htdocs/start.html';
 var CHANGE = "1";
 
-var myWindow = window.open(adresse, "_self"); //"_self", dann öffnet es sich im selben Tab
+var myWindow = window.open(adresse, ); //"_self", dann öffnet es sich im selben Tab
 const Http = new XMLHttpRequest();
 const HttpChanged = new XMLHttpRequest();
 
@@ -24,7 +24,7 @@ Http.onreadystatechange = function(){
 		console.log(Http.responseText);
 		adresse = Http.responseText;
         //hier wird website mit parametern von datenbank als url festgelegt
-        window.open(adresse, "_self");
+        window.open(adresse, );
 	}
 
 }
