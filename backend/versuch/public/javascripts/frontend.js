@@ -1,6 +1,6 @@
 console.log("Frontend geladen");
 
-var adresse = "ai-info.informatik.hs-fulda.de:443/htdocs/start.html";
+var adresse = 'ai-info.informatik.hs-fulda.de:443/htdocs/start.html';
 var CHANGE = "1";
 
 var myWindow = window.open(adresse, "_self"); //"_self", dann öffnet es sich im selben Tab
