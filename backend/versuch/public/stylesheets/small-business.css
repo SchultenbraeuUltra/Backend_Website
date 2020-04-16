@@ -58,6 +58,10 @@ p.thick {
 	text-align: center;
 }
 
+#modheadline {
+	text-align: center;
+}
+
 #roomname {
 	font-weight:lighter!important
 }
