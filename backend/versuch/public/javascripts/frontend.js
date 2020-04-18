@@ -3,7 +3,7 @@ console.log("Frontend geladen");
 var adresse = 'http://ai-info.informatik.hs-fulda.de:443/htdocs/start.html';
 var CHANGE = "1";
 
-var myWindow = window.open(adresse, ); //"_self", dann öffnet es sich im selben Tab
+var myWindow = window.open(adresse, "fenster"); //"_self", dann öffnet es sich im selben Tab
 const Http = new XMLHttpRequest();
 const HttpChanged = new XMLHttpRequest();
 
