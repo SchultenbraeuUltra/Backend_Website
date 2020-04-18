@@ -13,6 +13,7 @@ setInterval(load, 3000);
 function load() {
 	check(); 
 	if(CHANGE) {
+        console.log("this is a pretest");
 		const url = 'ai-info.informatik.hs-fulda.de:443/users/adresse';
 		Http.open("GET", url);
 		Http.send();
