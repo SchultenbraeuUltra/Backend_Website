@@ -19,7 +19,7 @@ function load() {
 	}
 }
 
-Http.onreadystatechange = function(){
+Http.onreadystatechange = (e) =>{
 	if (Http.readyState === 4 && Http.status === 200) {
 		console.log(Http.responseText);
 		adresse = Http.responseText;
@@ -40,7 +40,7 @@ function check() {
 	HttpChanged.send();
 }
 
-HttpChanged.onreadystatechange = function(){
+HttpChanged.onreadystatechange = (f) =>{
 	if (HttpChanged.readyState === 4 && HttpChanged.status === 200) {
 		CHANGE = ("1" == HttpChanged.responseText);
 	}
