@@ -24,7 +24,7 @@ Http.onreadystatechange = function(){
 		console.log(Http.responseText);
 		adresse = Http.responseText;
         //hier wird website mit parametern von datenbank als url festgelegt
-        window.open(adresse, );
+        window.open(adresse, "fenster");
 	}
 
 }
@@ -41,7 +41,6 @@ HttpChanged.onreadystatechange = function(){
 	}
 	
 }
-
 
 //Idee:
 //var adresse = RESTT CAL => localhost:3000/users/adresse
