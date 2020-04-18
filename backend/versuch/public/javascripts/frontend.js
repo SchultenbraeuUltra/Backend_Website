@@ -29,6 +29,11 @@ Http.onreadystatechange = function(){
 
 }
 
+
+//HIER IST EIN KOMMENTAR FÜR JACKIE :D
+
+
+
 function check() {
 	const url = 'ai-info.informatik.hs-fulda.de:443/users/change';
 	HttpChanged.open("GET", url);
