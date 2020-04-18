@@ -14,7 +14,7 @@ function load() {
 	check(); 
     console.log(CHANGE);
 	if(CHANGE) {
-        console.log("this is a pretest");
+        console.log("users/adresse wird aufgerufen");
 		const url = 'ai-info.informatik.hs-fulda.de:443/users/adresse';
 		Http.open("GET", url);
 		Http.send();
@@ -22,6 +22,7 @@ function load() {
 }
 
 Http.onreadystatechange = (e) =>{
+    console.log("Http.onreadystatechange wurde aufgerufen");
 	if (Http.readyState === XMLHttpRequest.DONE && Http.status === 200) {
 		console.log(Http.responseText + "This is a test");
 		adresse = Http.responseText;
@@ -37,12 +38,14 @@ Http.onreadystatechange = (e) =>{
 
 
 function check() {
+    console.log("users/change wird aufgerufen");
 	const url = 'ai-info.informatik.hs-fulda.de:443/users/change';
 	HttpChanged.open("GET", url);
 	HttpChanged.send();
 }
 
 HttpChanged.onreadystatechange = (f) =>{
+    console.log("HttpChanged.onreadystatechange wurde aufgerufen");
 	if (HttpChanged.readyState === XMLHttpRequest.DONE && HttpChanged.status === 200) {
 
 		CHANGE = ("1" == HttpChanged.responseText);
