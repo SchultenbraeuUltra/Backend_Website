@@ -13,7 +13,7 @@ setInterval(load, 3000);
 function load() {
 	check(); 
 	if(CHANGE) {
-		const url = 'ai-info.informatik.hs-fulda.de:443';
+		const url = 'ai-info.informatik.hs-fulda.de:443/users/adresse';
 		Http.open("GET", url);
 		Http.send();
 	}
@@ -30,7 +30,7 @@ Http.onreadystatechange = function(){
 }
 
 function check() {
-	const url = 'ai-info.informatik.hs-fulda.de:443';
+	const url = 'ai-info.informatik.hs-fulda.de:443/users/change';
 	HttpChanged.open("GET", url);
 	HttpChanged.send();
 }
