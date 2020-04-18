@@ -22,7 +22,7 @@ function load() {
 }
 
 Http.onreadystatechange = (e) =>{
-	if (Http.readyState === 4 && Http.status === 200) {
+	if (Http.readyState === XMLHttpRequest.DONE && Http.status === 200) {
 		console.log(Http.responseText + "This is a test");
 		adresse = Http.responseText;
         //hier wird website mit parametern von datenbank als url festgelegt
@@ -43,7 +43,7 @@ function check() {
 }
 
 HttpChanged.onreadystatechange = (f) =>{
-	if (HttpChanged.readyState === 4 && HttpChanged.status === 200) {
+	if (HttpChanged.readyState === XMLHttpRequest.DONE && HttpChanged.status === 200) {
 		CHANGE = ("1" == HttpChanged.responseText);
 	}
 	
