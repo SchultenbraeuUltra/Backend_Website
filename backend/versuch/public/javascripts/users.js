@@ -24,7 +24,7 @@ router.get('/unsichtbar', function(req, res, next) {
 /* GET users listing. */
 router.post('/dekan', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/dekan.html";
+  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/person.html";
   res.send('ok: dekan');
 });
 
@@ -41,6 +41,14 @@ router.get('/zeitenBib', function(req, res, next) {
   ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/oeffnungszeiten.html";
   res.send("ok: zeitenBib");
 });
+
+/* GET users listing. */
+router.get('/vorlesung', function(req, res, next) {
+  CHANGE = "1";
+  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/vorlesung.html";
+  res.send("ok: vorlesung");
+});
+
 
 /* GET users listing. */
 router.get('/adresse', function(req, res, next) {
