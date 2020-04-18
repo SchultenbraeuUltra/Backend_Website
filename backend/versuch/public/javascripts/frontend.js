@@ -1,7 +1,7 @@
 console.log("Frontend geladen");
 
 var adresse = 'http://ai-info.informatik.hs-fulda.de:443/htdocs/start.html';
-var CHANGE = "1";
+var CHANGE = "0";
 
 var myWindow = window.open(adresse, "fenster"); //"_self", dann öffnet es sich im selben Tab
 const Http = new XMLHttpRequest();
@@ -12,6 +12,7 @@ setInterval(load, 3000);
 
 function load() {
 	check(); 
+    console.log(CHANGE);
 	if(CHANGE) {
         console.log("this is a pretest");
 		const url = 'ai-info.informatik.hs-fulda.de:443/users/adresse';
