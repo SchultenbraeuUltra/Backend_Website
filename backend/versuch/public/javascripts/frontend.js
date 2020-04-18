@@ -21,7 +21,7 @@ function load() {
 
 Http.onreadystatechange = (e) =>{
 	if (Http.readyState === 4 && Http.status === 200) {
-		console.log(Http.responseText);
+		console.log(Http.responseText + "This is a test");
 		adresse = Http.responseText;
         //hier wird website mit parametern von datenbank als url festgelegt
         window.open(adresse, "fenster");
