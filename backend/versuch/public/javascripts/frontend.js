@@ -44,6 +44,7 @@ function check() {
 
 HttpChanged.onreadystatechange = (f) =>{
 	if (HttpChanged.readyState === XMLHttpRequest.DONE && HttpChanged.status === 200) {
+
 		CHANGE = ("1" == HttpChanged.responseText);
 	}
 	

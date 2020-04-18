@@ -61,7 +61,7 @@ router.get('/adresse', function(req, res, next) {
 /* GET users listing. */
 router.get('/change', function(req, res, next) {
   console.log(CHANGE);
-  res.send(CHANGE+"");
+  res.send(CHANGE);
 });
 
 /* GET users listing. */
