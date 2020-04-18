@@ -22,14 +22,14 @@ router.get('/unsichtbar', function(req, res, next) {
 });
 
 /* GET users listing. */
-router.post('/dekan', function(req, res, next) {
+router.get('/dekan', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/dekan.html";
   res.send('ok: dekan');
 });
 
 /* GET users listing. */
-router.post('/ssc', function(req, res, next) {
+router.get('/ssc', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
   res.send('ok: ssc');
