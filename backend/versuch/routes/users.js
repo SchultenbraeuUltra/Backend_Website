@@ -40,6 +40,7 @@ router.all('/ssc', function(req, res, next) {
 router.all('/datenbank', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "placeholder-DO-NOT-EAT";
+  console.log(req.body);
   res.send(req.body);    // echo the result back
 });
 
