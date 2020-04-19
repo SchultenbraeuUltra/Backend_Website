@@ -45,7 +45,7 @@ p.thick {
 
 }
 
-#variablesBild {
+.variablesBild {
 	width: 400px;
 	box-shadow: 5px 5px 10px silver;
 }
@@ -55,6 +55,10 @@ p.thick {
 }
 
 #roomheadline {
+	text-align: center;
+}
+
+#modheadline {
 	text-align: center;
 }
 

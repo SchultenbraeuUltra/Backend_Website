@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Vorlesungsauskunft</title>
+  
+  <script src="../javascripts/timer.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../stylesheets/small-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    
+    <img id="logo" src="../images/Logo.png">
+	
+	<h1 id="modheadline">Vorlesungsauskunft</h1>
+	
+<!-- 	<div class="row align-items-center my-5">
+		  <div class="col-lg-3">
+			<img class="logo" src="bilder/Logo.png">
+		  </div>
+		  
+		  <div class="col-lg-9">
+			<h1>Vorlesung</h1>
+		  </div>
+	</div> -->
+
+  <!-- Page Content -->
+    <div class="container">
+    
+    <!-- Heading Row -->
+        
+    <!-- /.col-lg-8 -->
+
+            
+            
+      <div class="row align-items-center my-5">
+      <div class="col-lg-7">
+        <img class="variablesBild" id="modimg" src="../images/map_gb12.png" alt="">
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+
+			<div class="row align-items-center my-5">
+				
+                <h1 id="modname">Vorlesung Name</h1>
+                <div class="col-lg-6">
+                <h5 id="modroom">Raum<br>
+                <h5 id="modrythm">Rythmus<br>
+                <h5 id="modprof">Zuständiger<br></h5>
+                </div>
+                <img class="variablesBild" id="modprofimg" src="../images/bomsdorf.jpg" alt="">
+				
+
+			</div>
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+
+      <!-- /.col-md-4 -->
+  
+    <!-- /.row -->
+
+  <!-- /.container -->
+            </div>
+  <!-- Footer -->
+	<footer class="py-2 bg-white">
+		  <p class="footer">Copyright &copy; Your Website 2019</p>
+	</footer>
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.onload = processURL;
+      
+    function processURL(){
+        var parameters = location.search.substring(1);
+        parameters = decodeURI(parameters);
+        var temp = parameters.split("&");
+        console.log(temp);
+        
+        if(temp){
+            temp.forEach(replaceContent);
+        }
+        
+        function replaceContent(item){
+            var pair = item.split("=");
+            if(pair[0].includes("img") == true){
+                document.getElementById(pair[0]).src = pair[1];
+            }
+            document.getElementById(pair[0]).innerHTML = pair[1];
+        }
+        
+    }
+    
+    </script>
+
+</body>
+
+</html>

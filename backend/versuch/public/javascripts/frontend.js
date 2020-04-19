@@ -1,9 +1,9 @@
 console.log("Frontend geladen");
 
-var adresse = "ai-info.informatik.hs-fulda.de:443/htdocs/start.html";
-var CHANGE = "1";
+var adresse = 'http://ai-info.informatik.hs-fulda.de:443/htdocs/start.html';
+var CHANGE = "0";
 
-var myWindow = window.open(adresse, "_self"); //"_self", dann öffnet es sich im selben Tab
+var myWindow = window.open(adresse, "fenster"); //"_self", dann öffnet es sich im selben Tab
 const Http = new XMLHttpRequest();
 const HttpChanged = new XMLHttpRequest();
 
@@ -12,36 +12,46 @@ setInterval(load, 3000);
 
 function load() {
 	check(); 
+    console.log(CHANGE);
 	if(CHANGE) {
-		const url = 'ai-info.informatik.hs-fulda.de:443';
+        console.log("users/adresse wird aufgerufen");
+		const url = 'ai-info.informatik.hs-fulda.de:443/users/adresse';
 		Http.open("GET", url);
 		Http.send();
 	}
 }
 
-Http.onreadystatechange = function(){
-	if (Http.readyState === 4 && Http.status === 200) {
-		console.log(Http.responseText);
+Http.onreadystatechange = (e) =>{
+    console.log("Http.onreadystatechange wurde aufgerufen");
+	if (Http.readyState === XMLHttpRequest.DONE && Http.status === 200) {
+		console.log(Http.responseText + "This is a test");
 		adresse = Http.responseText;
         //hier wird website mit parametern von datenbank als url festgelegt
-        window.open(adresse, "_self");
+        window.open(adresse, "fenster");
 	}
 
 }
 
+
+//HIER IST EIN KOMMENTAR FÜR JACKIE :D
+
+
+
 function check() {
-	const url = 'ai-info.informatik.hs-fulda.de:443';
+    console.log("users/change wird aufgerufen");
+	const url = 'ai-info.informatik.hs-fulda.de:443/users/change';
 	HttpChanged.open("GET", url);
 	HttpChanged.send();
 }
 
-HttpChanged.onreadystatechange = function(){
-	if (HttpChanged.readyState === 4 && HttpChanged.status === 200) {
+HttpChanged.onreadystatechange = (f) =>{
+    console.log("HttpChanged.onreadystatechange wurde aufgerufen");
+	if (HttpChanged.readyState === XMLHttpRequest.DONE && HttpChanged.status === 200) {
+
 		CHANGE = ("1" == HttpChanged.responseText);
 	}
 	
 }
-
 
 //Idee:
 //var adresse = RESTT CAL => localhost:3000/users/adresse
