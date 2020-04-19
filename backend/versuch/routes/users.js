@@ -35,6 +35,13 @@ router.all('/ssc', function(req, res, next) {
   res.send("ok: ssc");
 });
 
+/* GET users listing. */
+router.all('/datenbank', function(req, res, next) {
+  CHANGE = "1";
+  ADRESSE = "placeholder-DO-NOT-EAT";
+  res.send("ok: db");
+});
+
 
 /* GET users listing.
 router.post('/dekan', function(req, res, next) {
