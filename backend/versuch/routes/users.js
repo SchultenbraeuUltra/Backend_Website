@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+router.use(express.json());
 
 var ADRESSE;
 var CHANGE = "0";
@@ -32,14 +33,14 @@ router.all('/dekan', function(req, res, next) {
 router.all('/ssc', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
-  res.send("ok: ssc1");
+  res.send("ok: ssc2");
 });
 
 /* GET users listing. */
 router.all('/datenbank', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "placeholder-DO-NOT-EAT";
-  res.send("ok: db");
+  res.send(request.body);    // echo the result back
 });
 
 
