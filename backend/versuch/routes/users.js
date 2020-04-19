@@ -33,14 +33,14 @@ router.all('/dekan', function(req, res, next) {
 router.all('/ssc', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
-  res.send("ok: ssc2");
+  res.send("ok: ssc3");
 });
 
 /* GET users listing. */
 router.all('/datenbank', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "placeholder-DO-NOT-EAT";
-  res.send(request.body);    // echo the result back
+  res.send(req.body);    // echo the result back
 });
 
 
