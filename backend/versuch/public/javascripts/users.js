@@ -32,7 +32,7 @@ router.post('/dekan', function(req, res, next) {
 router.post('/ssc', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
-  res.send('ok: ssc');
+  res.send('ok: ssc2');
 });
 
 /* GET users listing. */
