@@ -17,35 +17,35 @@ router.get('/hallo', function(req, res, next) {
 /* GET users listing. */
 router.get('/unsichtbar', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/unsichtbar.html";
+  ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/unsichtbar.html";
   res.send('ok: unsichtbar');
 });
 
 /* GET users listing. */
 router.post('/dekan', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/person.html";
+  ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/person.html";
   res.send('ok: dekan');
 });
 
 /* GET users listing. */
 router.post('/ssc', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
+  ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
   res.send('ok: ssc2');
 });
 
 /* GET users listing. */
 router.get('/zeitenBib', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/oeffnungszeiten.html";
+  ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/oeffnungszeiten.html";
   res.send("ok: zeitenBib");
 });
 
 /* GET users listing. */
 router.get('/vorlesung', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/vorlesung.html";
+  ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/vorlesung.html";
   res.send("ok: vorlesung");
 });
 
