@@ -1,7 +1,7 @@
 console.log("Frontend geladen");
 
-var adresse = 'http://ai-info.informatik.hs-fulda.de:443/htdocs/start.html';
-var CHANGE = "0";
+var adresse = "http://ai-info.informatik.hs-fulda.de:443/htdocs/start.html";
+var CHANGE = "1";
 
 var myWindow = window.open(adresse, "fenster"); //"_self", dann öffnet es sich im selben Tab
 const Http = new XMLHttpRequest();
@@ -15,13 +15,13 @@ function load() {
     console.log(CHANGE);
 	if(CHANGE) {
         console.log("users/adresse wird aufgerufen");
-		const url = 'ai-info.informatik.hs-fulda.de:443/users/adresse';
+		const url = 'http://ai-info.informatik.hs-fulda.de:443/users/adresse';
 		Http.open("GET", url);
 		Http.send();
 	}
 }
 
-Http.onreadystatechange = (e) =>{
+Http.onreadystatechange = (e) => {
     console.log("Http.onreadystatechange wurde aufgerufen");
 	if (Http.readyState === XMLHttpRequest.DONE && Http.status === 200) {
 		console.log(Http.responseText + "This is a test");
@@ -33,13 +33,9 @@ Http.onreadystatechange = (e) =>{
 }
 
 
-//HIER IST EIN KOMMENTAR FÜR JACKIE :D
-
-
-
 function check() {
     console.log("users/change wird aufgerufen");
-	const url = 'ai-info.informatik.hs-fulda.de:443/users/change';
+	const url = 'http://ai-info.informatik.hs-fulda.de:443/users/change';
 	HttpChanged.open("GET", url);
 	HttpChanged.send();
 }
