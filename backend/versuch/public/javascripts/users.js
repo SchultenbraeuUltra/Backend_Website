@@ -11,28 +11,28 @@ router.get('/', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/hallo', function(req, res, next) {
-  res.send('selber hallo');
+  res.send("selber hallo");
 });
 
 /* GET users listing. */
 router.get('/unsichtbar', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/unsichtbar.html";
-  res.send('ok: unsichtbar');
+  res.send("ok: unsichtbar");
 });
 
 /* GET users listing. */
 router.post('/dekan', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/person.html";
-  res.send('ok: dekan');
+  res.send("ok: dekan");
 });
 
 /* GET users listing. */
 router.post('/ssc', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
-  res.send('ok: ssc2');
+  res.send("ok: ssc2");
 });
 
 /* GET users listing. */
