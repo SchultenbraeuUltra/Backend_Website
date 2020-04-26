@@ -39,11 +39,11 @@ router.all('/ssc', function(req, res, next) {
 /* GET users listing. */
 router.all('/datenbank', function(req, res, next) { 
   console.log(req.body);
-  console.log(req.body.obj.modul);
+  //console.log(req.body.obj.modul);
   console.log(fertig);
   
   CHANGE = "1";
-  ADRESSE = "placeholder";
+  ADRESSE = req.body.obj.modul;
   res.send("ok: datenbank");
 });
 
