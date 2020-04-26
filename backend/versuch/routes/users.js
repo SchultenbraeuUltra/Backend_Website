@@ -47,7 +47,9 @@ router.all('/datenbank', function(req, res, next) {
     switch(req.body.obj.typ){
       case '1': 
         switch(req.body.obj.subtyp){
-          case '1': console.log(req.body.obj.modul); 
+          case '1': 
+            console.log(req.body.obj.modul); 
+            break;
           default: console.log("Case subtyp doesn't work");
         }
         break;
