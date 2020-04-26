@@ -33,32 +33,17 @@ router.all('/dekan', function(req, res, next) {
 router.all('/ssc', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "http://ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
-  res.send("ok: ssc3");
+  res.send("ok: ssc");
 });
 
 /* GET users listing. */
 router.all('/datenbank', function(req, res, next) {
   CHANGE = "1";
-  ADRESSE = "placeholder-DO-NOT-EAT";
+  ADRESSE = "placeholder-1";
   console.log(req.body);
-  res.send(req.body);    // echo the result back
+  console.log(req.body.obj.modul);
+  res.send("ok: datenbank");
 });
-
-
-/* GET users listing.
-router.post('/dekan', function(req, res, next) {
-  CHANGE = "1";
-  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/person.html";
-  res.send("ok: dekan");
-});
-
-/* GET users listing.
-router.post('/ssc', function(req, res, next) {
-  CHANGE = "1";
-  ADRESSE = "ai-info.informatik.hs-fulda.de:443/htdocs/index.html";
-  res.send("ok: ssc");
-});
-
 
 /* GET users listing. */
 router.get('/zeitenBib', function(req, res, next) {
