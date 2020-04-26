@@ -40,10 +40,20 @@ router.all('/ssc', function(req, res, next) {
 router.all('/datenbank', function(req, res, next) { 
   console.log(req.body);
   
-  CHANGE = "1";
+  //CHANGE = "1";
+  //ADRESSE = req.body.obj.modul;
   
   try {
-    ADRESSE = req.body.obj.modul;
+    switch(req.body.obj.typ){
+      case 1: 
+        switch(req.body.obj.subtyp){
+          case 1: console.log(req.body.obj.modul); 
+          default: console.log("Case subtyp doesn't work");
+        }
+        break;
+      default: console.log("Case typ doesn't work");
+    }
+    
   } catch(err) {
     console.log("no info");
   }
