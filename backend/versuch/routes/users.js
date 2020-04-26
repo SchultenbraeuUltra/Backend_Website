@@ -40,7 +40,7 @@ router.all('/ssc', function(req, res, next) {
 router.all('/datenbank', function(req, res, next) { 
   console.log(req.body);
   //console.log(req.body.obj.modul);
-  console.log(fertig);
+  console.log("fertig");
   
   CHANGE = "1";
   ADRESSE = req.body.obj.modul;
