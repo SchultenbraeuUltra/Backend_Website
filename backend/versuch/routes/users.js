@@ -41,7 +41,8 @@ router.all('/datenbank', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "placeholder-1";
   console.log(req.body);
-  console.log(req.body.obj.modul);
+  console.log(req.body.modul);
+  console.log("fertig");
   res.send("ok: datenbank");
 });
 
