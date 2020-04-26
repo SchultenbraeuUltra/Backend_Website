@@ -40,10 +40,10 @@ router.all('/ssc', function(req, res, next) {
 router.all('/datenbank', function(req, res, next) {
   CHANGE = "1";
   ADRESSE = "placeholder-1";
-  console.log(req.body);
-  console.log("start");
-  console.log(req.body.modul);
-  console.log("fertig");
+  //console.log(req.body);
+  //console.log("start");
+  //console.log(req.body.modul);
+  //console.log("fertig");
   res.send("ok: datenbank");
 });
 
