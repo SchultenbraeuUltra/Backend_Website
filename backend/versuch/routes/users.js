@@ -11288,6 +11288,7 @@ router.all('/datenbank', function(req, res, next) {
 	  if (vlvz.module[i].courseTitle == req.body.modul && vlvz.module[i].courseType == req.body.art) { 
 	    adress += "?modname=" + vlvz.module[i].courseTitle + "&modroom=" + vlvz.module[i].room + "&modrythm=" + vlvz.module[i].rythm + "&modprof=" + vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname + "&modprofimg=";
 	    break;
+	  }
 	}
         break;
       }
