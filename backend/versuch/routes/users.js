@@ -11277,7 +11277,7 @@ router.all('/datenbank', function(req, res, next) {
   
   
   //Fehlervermeidung bei leeren Objekten
-  try {
+ 
     //Worum geht es
     switch(req.body.obj.typ){
       //Modul
@@ -11312,9 +11312,7 @@ router.all('/datenbank', function(req, res, next) {
       default: console.log("Case typ doesn't work");
     }
     
-  } catch(err) {
-    console.log("no info");
-  }
+  
 	
   CHANGE = "1";
   ADRESSE = adress;
