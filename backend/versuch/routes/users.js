@@ -11279,7 +11279,7 @@ router.all('/datenbank', function(req, res, next) {
   //Fehlervermeidung bei leeren Objekten
  try{
     //Worum geht es
-    switch(req.body.obj.typ){
+    switch(req.body.typ){
       //Modul
       case '1':{
         //Vorlesungsseite
