@@ -11275,18 +11275,19 @@ router.all('/ssc', function(req, res, next) {
 router.all('/datenbank', function(req, res, next) { 
   console.log(req.body);
   
-  
+  var adress = "placeholder";
   //Fehlervermeidung bei leeren Objekten
  try{
     //Worum geht es
     switch(req.body.obj.typ){
       //Modul
-      case '1':
+      case '1':{
         //Vorlesungsseite
-	var adress = "http://ai-info.informatik.hs-fulda.de:443/htdocs/vorlesung.html";	    
+	//var adress = "http://ai-info.informatik.hs-fulda.de:443/htdocs/vorlesung.html";	    
 	for (var i = 0; i < vlvz.module.length; i++) {	  
 	}
         break;
+      }
       default: console.log("Case typ doesn't work");
     }
  } catch(err){
