@@ -5,12 +5,11 @@ router.use(express.json());
 var ADRESSE;
 var CHANGE = "0";
 
-var vlvz = {
-    "module": [
+var vlvz = { "module": [
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "08:00:00",
@@ -32,7 +31,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jörg",
@@ -41,8 +40,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -64,7 +63,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jörg",
@@ -73,8 +72,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -96,7 +95,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Alexander",
@@ -105,8 +104,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -128,7 +127,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Judit",
@@ -137,8 +136,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "17:15:00",
@@ -160,7 +159,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -169,8 +168,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -192,7 +191,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Yvonne",
@@ -201,8 +200,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "13:45:00",
@@ -223,7 +222,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus Johannes",
@@ -232,8 +231,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -255,7 +254,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus Johannes",
@@ -264,8 +263,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "8. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "8",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -287,7 +286,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -296,8 +295,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "9. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "9",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -319,7 +318,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus Johannes",
@@ -328,8 +327,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "10. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "10",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -351,7 +350,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martin Erik",
@@ -360,8 +359,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "11. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "11",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -383,7 +382,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Alexander",
@@ -392,8 +391,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "12. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "12",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -415,7 +414,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Thorsten",
@@ -424,8 +423,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "13. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "13",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "11:40:00",
@@ -446,7 +445,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus Johannes",
@@ -455,8 +454,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "14. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "14",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -478,7 +477,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martin Erik",
@@ -487,8 +486,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "15. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "15",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -510,7 +509,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Thorsten",
@@ -519,8 +518,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "16. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "16",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -542,7 +541,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Yvonne",
@@ -551,8 +550,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Programmierung 1",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "17. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "17",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -572,7 +571,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna-Lena",
@@ -580,9 +579,9 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Programmierpraktikum",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseTitle": "ProgrammierÜbung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "08:00:00",
@@ -604,7 +603,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "30.016 Hörsaal",
-            "building": "Gebäude 30",
+            "building": "gebäude30",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jörg",
@@ -612,16 +611,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Programmierpraktikum",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseTitle": "ProgrammierÜbung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "15:30:00",
             "endtime": "17:00:00",
             "dates": ["22.11.2019"],
             "room": "51.209 Softwarelabor 3 & 51.203 WI Labor & 51.111 Softwarelabor 2 & 51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jörg",
@@ -629,9 +628,9 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Programmierpraktikum",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseTitle": "ProgrammierÜbung",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "17:15:00",
@@ -652,7 +651,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Benjamin",
@@ -660,9 +659,9 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Programmierpraktikum",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseTitle": "ProgrammierÜbung",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -683,7 +682,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Benjamin",
@@ -691,9 +690,9 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Programmierpraktikum",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseTitle": "ProgrammierÜbung",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -714,7 +713,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Benjamin",
@@ -722,9 +721,9 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Programmierpraktikum",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseTitle": "ProgrammierÜbung",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -745,7 +744,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Benjamin",
@@ -754,8 +753,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Digitaltechnik und Rechnersysteme",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -777,7 +776,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martin",
@@ -786,8 +785,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Digitaltechnik und Rechnersysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -809,7 +808,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "34.-108 Seminarraum",
-            "building": "Gebäude 34",
+            "building": "gebäude34",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martin",
@@ -818,8 +817,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Digitaltechnik und Rechnersysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -841,7 +840,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martin",
@@ -850,8 +849,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Digitaltechnik und Rechnersysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -873,7 +872,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "34.-108 Seminarraum",
-            "building": "Gebäude 34",
+            "building": "gebäude34",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martin",
@@ -882,8 +881,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Technische Grundlagen der Informatik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -905,7 +904,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Karim",
@@ -914,8 +913,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Technische Grundlagen der Informatik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -937,7 +936,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Solveig",
@@ -946,8 +945,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -970,7 +969,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -980,7 +979,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -1002,7 +1001,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -1012,7 +1011,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -1034,7 +1033,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -1044,7 +1043,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "13:45:00",
@@ -1065,7 +1064,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -1075,7 +1074,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
             "courseType": "Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -1097,7 +1096,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -1107,7 +1106,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
             "courseType": "Übung",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "13:45:00",
@@ -1128,7 +1127,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -1138,7 +1137,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
             "courseType": "Übung",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "parallelGroupValue": "6",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -1160,7 +1159,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "34.-108 Seminarraum",
-            "building": "Gebäude 34",
+            "building": "gebäude34",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -1170,7 +1169,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
             "courseType": "Übung",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "parallelGroupValue": "7",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -1192,7 +1191,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "34.-108 Seminarraum",
-            "building": "Gebäude 34",
+            "building": "gebäude34",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -1202,7 +1201,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik",
             "courseType": "Übung",
-            "parallelGroupValue": "8. Parallelgruppe",
+            "parallelGroupValue": "8",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -1223,7 +1222,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -1232,8 +1231,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Betriebswirtschaftslehre 1",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -1255,7 +1254,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -1265,7 +1264,7 @@ var vlvz = {
         {
             "courseTitle": "Betriebswirtschaftslehre 1",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -1287,7 +1286,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -1297,7 +1296,7 @@ var vlvz = {
         {
             "courseTitle": "Betriebswirtschaftslehre 1",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -1319,7 +1318,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -1329,7 +1328,7 @@ var vlvz = {
         {
             "courseTitle": "Betriebswirtschaftslehre 1",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -1351,7 +1350,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -1361,7 +1360,7 @@ var vlvz = {
         {
             "courseTitle": "Betriebswirtschaftslehre 1",
             "courseType": "Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -1383,7 +1382,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -1392,8 +1391,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Angewandte Informatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -1415,7 +1414,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Yvonne",
@@ -1425,7 +1424,7 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Angewandte Informatik)",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "17:15:00",
@@ -1447,7 +1446,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Yvonne",
@@ -1457,7 +1456,7 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Angewandte Informatik)",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -1479,7 +1478,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Yvonne",
@@ -1489,7 +1488,7 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Angewandte Informatik)",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -1511,7 +1510,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Yvonne",
@@ -1520,8 +1519,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Betriebssysteme",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -1544,7 +1543,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "20.010 Großunterrichtsraum",
-            "building": "Gebäude 20",
+            "building": "gebäude20",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1553,8 +1552,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Betriebssysteme",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -1576,7 +1575,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "20.010 Großunterrichtsraum",
-            "building": "Gebäude 20",
+            "building": "gebäude20",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1585,8 +1584,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Betriebssysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -1601,7 +1600,7 @@ var vlvz = {
                 "06.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1611,8 +1610,8 @@ var vlvz = {
         {
             "courseNumber": "AI1013P",
             "courseTitle": "Betriebssysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -1628,7 +1627,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1637,8 +1636,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Betriebssysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "14-täglich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -1654,7 +1653,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1663,8 +1662,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Betriebssysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "14-täglich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -1678,7 +1677,7 @@ var vlvz = {
                 "05.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1687,8 +1686,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Betriebssysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -1702,7 +1701,7 @@ var vlvz = {
                 "06.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1711,8 +1710,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Betriebssysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -1728,7 +1727,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1737,8 +1736,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Datenbanksysteme",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "11:40:00",
@@ -1760,7 +1759,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -1769,8 +1768,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Datenbanksysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "08:00:00",
@@ -1792,7 +1791,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -1801,8 +1800,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Datenbanksysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -1824,7 +1823,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -1833,8 +1832,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Datenbanksysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -1856,7 +1855,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -1865,8 +1864,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Datenbanksysteme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -1889,7 +1888,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -1898,8 +1897,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Verteilte Systeme",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -1921,7 +1920,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -1930,8 +1929,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -1953,7 +1952,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -1962,8 +1961,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -1985,7 +1984,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -1994,8 +1993,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "08:00:00",
@@ -2017,7 +2016,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -2026,8 +2025,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -2049,7 +2048,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -2058,8 +2057,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -2081,7 +2080,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -2090,15 +2089,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "18:00:00",
             "dates": ["02.11.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2107,15 +2106,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:45:00",
             "endtime": "13:10:00",
             "dates": ["18.11.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2124,15 +2123,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:45:00",
             "endtime": "13:10:00",
             "dates": ["25.11.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2141,15 +2140,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:45:00",
             "endtime": "13:10:00",
             "dates": ["02.12.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2158,15 +2157,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:45:00",
             "endtime": "13:10:00",
             "dates": ["13.01.2020"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2175,15 +2174,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:45:00",
             "endtime": "13:10:00",
             "dates": ["20.01.2020"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2192,15 +2191,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:45:00",
             "endtime": "13:10:00",
             "dates": ["27.01.2020"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2209,15 +2208,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "15:00:00",
             "dates": ["09.11.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marie",
@@ -2226,15 +2225,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "10:00:00",
             "endtime": "17:00:00",
             "dates": ["23.11.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marie",
@@ -2243,15 +2242,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "10:00:00",
             "endtime": "17:00:00",
             "dates": ["07.12.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marie",
@@ -2260,15 +2259,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "10:00:00",
             "endtime": "17:00:00",
             "dates": ["14.12.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marie",
@@ -2277,15 +2276,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "10:00:00",
             "endtime": "17:00:00",
             "dates": ["11.01.2020"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marie",
@@ -2294,15 +2293,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "10:00:00",
             "endtime": "17:00:00",
             "dates": ["25.01.2020"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marie",
@@ -2311,15 +2310,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "10:00:00",
             "endtime": "17:00:00",
             "dates": ["15.02.2020"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marie",
@@ -2328,8 +2327,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -2352,7 +2351,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Carola",
@@ -2361,8 +2360,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -2384,7 +2383,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Carola",
@@ -2393,15 +2392,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "18:00:00",
             "dates": ["09.11.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2410,15 +2409,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "13:45:00",
             "endtime": "18:00:00",
             "dates": ["18.11.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2427,15 +2426,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "13:45:00",
             "endtime": "18:00:00",
             "dates": ["25.11.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2444,15 +2443,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "13:45:00",
             "endtime": "18:00:00",
             "dates": ["02.12.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2461,15 +2460,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "13:45:00",
             "endtime": "18:00:00",
             "dates": ["13.01.2020"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2478,15 +2477,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "13:45:00",
             "endtime": "18:00:00",
             "dates": ["20.01.2020"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2495,15 +2494,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Präsentation und Kommunikation",
-            "courseType": "Seminar",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "13:45:00",
             "endtime": "18:00:00",
             "dates": ["27.01.2020"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Marianne",
@@ -2512,8 +2511,8 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit (Angewandte Informatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -2534,7 +2533,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -2543,8 +2542,8 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit (Angewandte Informatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "14-täglich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -2560,7 +2559,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -2569,15 +2568,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit (Angewandte Informatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "09:30:00",
             "dates": ["11.11.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -2586,15 +2585,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit (Angewandte Informatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "09:30:00",
             "dates": ["25.11.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -2603,8 +2602,8 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit (Wirtschaftsinformatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -2626,7 +2625,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -2635,8 +2634,8 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit (Wirtschaftsinformatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "14-täglich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -2650,7 +2649,7 @@ var vlvz = {
                 "04.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -2659,15 +2658,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit (Wirtschaftsinformatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "09:30:00",
             "dates": ["11.11.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -2676,15 +2675,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit (Wirtschaftsinformatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "09:30:00",
             "dates": ["25.11.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -2693,15 +2692,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "12:15:00",
             "dates": ["23.11.2019"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Sven",
@@ -2710,15 +2709,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "12:15:00",
             "dates": ["07.12.2019"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Sven",
@@ -2727,15 +2726,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "12:45:00",
             "endtime": "16:00:00",
             "dates": ["23.11.2019"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Sven",
@@ -2744,15 +2743,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "12:45:00",
             "endtime": "16:00:00",
             "dates": ["07.12.2019"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Sven",
@@ -2761,15 +2760,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "11:15:00",
             "dates": ["30.11.2019"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Wolfgang",
@@ -2778,15 +2777,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "11:15:00",
             "dates": ["14.12.2019"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Wolfgang",
@@ -2795,15 +2794,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "11:45:00",
             "endtime": "15:00:00",
             "dates": ["30.11.2019"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Wolfgang",
@@ -2812,15 +2811,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "11:45:00",
             "endtime": "15:00:00",
             "dates": ["14.12.2019"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Wolfgang",
@@ -2829,15 +2828,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "11:15:00",
             "dates": ["18.01.2020"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Wolfgang",
@@ -2846,15 +2845,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "11:15:00",
             "dates": ["25.01.2020"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Wolfgang",
@@ -2863,15 +2862,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "11:45:00",
             "endtime": "15:00:00",
             "dates": ["18.01.2020"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Wolfgang",
@@ -2880,15 +2879,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "11:45:00",
             "endtime": "15:00:00",
             "dates": ["25.01.2020"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Wolfgang",
@@ -2897,15 +2896,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "12:15:00",
             "dates": ["11.01.2020"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Sven",
@@ -2914,15 +2913,15 @@ var vlvz = {
         },
         {
             "courseTitle": "IT-Sicherheit",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "12:45:00",
             "endtime": "16:00:00",
             "dates": ["11.01.2020"],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Sven",
@@ -2931,8 +2930,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Angewandte Informatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -2955,7 +2954,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Michael",
@@ -2964,8 +2963,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Angewandte Informatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -2987,7 +2986,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.131 ESLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Reiner Robert",
@@ -2996,8 +2995,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Angewandte Informatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "17:15:00",
@@ -3018,7 +3017,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Bernhard",
@@ -3027,8 +3026,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Angewandte Informatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "19:00:00",
@@ -3049,7 +3048,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Bernhard",
@@ -3058,8 +3057,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Höhere Konzepte der Programmierung",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -3074,7 +3073,7 @@ var vlvz = {
                 "03.12.2019"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -3083,8 +3082,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Höhere Konzepte der Programmierung",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -3099,7 +3098,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jörg",
@@ -3108,8 +3107,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Höhere Konzepte der Programmierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -3131,7 +3130,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jörg",
@@ -3140,8 +3139,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Höhere Konzepte der Programmierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -3153,7 +3152,7 @@ var vlvz = {
                 "13.11.2019"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -3162,8 +3161,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Höhere Konzepte der Programmierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -3178,7 +3177,7 @@ var vlvz = {
                 "03.12.2019"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -3187,8 +3186,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Höhere Konzepte der Programmierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -3203,7 +3202,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jörg",
@@ -3211,16 +3210,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "11:00:00",
             "endtime": "13:00:00",
             "dates": ["16.10.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3228,16 +3227,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "16:00:00",
             "dates": ["30.10.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3245,16 +3244,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "09:00:00",
             "endtime": "16:00:00",
             "dates": ["29.11.2019"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Hermann",
@@ -3262,16 +3261,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "11:00:00",
             "endtime": "13:00:00",
             "dates": ["16.10.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3279,16 +3278,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "16:00:00",
             "dates": ["30.10.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3296,16 +3295,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "16:00:00",
             "dates": ["30.11.2019"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Hermann",
@@ -3313,16 +3312,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "11:00:00",
             "endtime": "13:00:00",
             "dates": ["16.10.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3330,16 +3329,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "16:00:00",
             "dates": ["30.10.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3347,16 +3346,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "09:00:00",
             "endtime": "16:00:00",
             "dates": ["06.12.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Hermann",
@@ -3364,16 +3363,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "11:00:00",
             "endtime": "13:00:00",
             "dates": ["16.10.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3381,16 +3380,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "16:00:00",
             "dates": ["30.10.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3398,16 +3397,16 @@ var vlvz = {
             }
         },
         {
-            "courseTitle": "Praxisprojekt-Vorseminar",
-            "courseType": "Vorlesung/Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseTitle": "Praxisprojekt-VorVorlesung",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "16:00:00",
             "dates": ["07.12.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Hermann",
@@ -3416,8 +3415,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Grundlagen der Wirtschaftsinformatik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -3439,7 +3438,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Norbert",
@@ -3449,7 +3448,7 @@ var vlvz = {
         {
             "courseTitle": "Grundlagen der Wirtschaftsinformatik",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -3471,7 +3470,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Norbert",
@@ -3481,7 +3480,7 @@ var vlvz = {
         {
             "courseTitle": "Grundlagen der Wirtschaftsinformatik",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -3503,7 +3502,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Norbert",
@@ -3513,7 +3512,7 @@ var vlvz = {
         {
             "courseTitle": "Grundlagen der Wirtschaftsinformatik",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -3535,7 +3534,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Norbert",
@@ -3544,8 +3543,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Optimierung",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -3567,7 +3566,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "52.009 Mehrzweckraum (ohne Bühne)",
-            "building": "Gebäude 52",
+            "building": "gebäude52",
             "lecturer": {
                 "degree": "",
                 "firstname": "Alexander",
@@ -3577,7 +3576,7 @@ var vlvz = {
         {
             "courseTitle": "Optimierung",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -3600,7 +3599,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Alexander",
@@ -3610,7 +3609,7 @@ var vlvz = {
         {
             "courseTitle": "Optimierung",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -3632,7 +3631,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Alexander",
@@ -3641,8 +3640,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Data Mining",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -3664,7 +3663,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Frank",
@@ -3673,15 +3672,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Data Mining",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Dienstag",
             "starttime": "17:15:00",
             "endtime": "18:45:00",
             "dates": ["22.10.2019"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Frank",
@@ -3690,8 +3689,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Data Mining",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -3713,7 +3712,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Frank",
@@ -3722,8 +3721,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Data Mining",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -3745,7 +3744,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Frank",
@@ -3754,8 +3753,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Data Mining",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -3777,7 +3776,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Frank",
@@ -3786,8 +3785,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mensch-Computer-Interaktion",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -3809,7 +3808,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Hans Martin",
@@ -3818,8 +3817,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mensch-Computer-Interaktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -3841,7 +3840,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -3850,8 +3849,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mensch-Computer-Interaktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -3873,7 +3872,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -3882,8 +3881,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Logistik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -3905,7 +3904,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3914,8 +3913,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Logistik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -3937,7 +3936,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -3946,8 +3945,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Grundlagen der Wirtschaftspolitik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -3969,7 +3968,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -3978,8 +3977,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Grundlagen der Wirtschaftspolitik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -4001,7 +4000,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Markus",
@@ -4010,8 +4009,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Unternehmensgründung 1 und 2",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:20:00",
@@ -4033,7 +4032,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Claudia",
@@ -4042,15 +4041,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Big Data Grundlagen",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:30:00",
             "endtime": "18:00:00",
             "dates": ["30.09.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Heiner",
@@ -4059,15 +4058,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Big Data Grundlagen",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Dienstag",
             "starttime": "08:30:00",
             "endtime": "12:30:00",
             "dates": ["01.10.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Heiner",
@@ -4076,15 +4075,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Big Data Grundlagen",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "12:30:00",
             "endtime": "14:30:00",
             "dates": ["02.10.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Heiner",
@@ -4093,15 +4092,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Big Data Grundlagen",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Dienstag",
             "starttime": "08:30:00",
             "endtime": "18:00:00",
             "dates": ["08.10.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Heiner",
@@ -4110,15 +4109,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Big Data Grundlagen",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Donnerstag",
             "starttime": "08:30:00",
             "endtime": "17:30:00",
             "dates": ["10.10.2019"],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Heiner",
@@ -4127,15 +4126,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Big Data Grundlagen",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Dienstag",
             "starttime": "13:30:00",
             "endtime": "18:00:00",
             "dates": ["01.10.2019"],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Heiner",
@@ -4144,15 +4143,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Big Data Grundlagen",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "08:00:00",
             "endtime": "12:00:00",
             "dates": ["02.10.2019"],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Heiner",
@@ -4161,15 +4160,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Big Data Grundlagen",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "08:30:00",
             "endtime": "18:00:00",
             "dates": ["09.10.2019"],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Heiner",
@@ -4178,8 +4177,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "11:40:00",
@@ -4201,7 +4200,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -4210,8 +4209,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -4233,7 +4232,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Paul",
@@ -4242,15 +4241,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "13:10:00",
             "endtime": "14:00:00",
             "dates": ["18.12.2019"],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -4259,8 +4258,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - 3D-Modellierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "19:00:00",
@@ -4282,7 +4281,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Paul",
@@ -4291,8 +4290,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - 3D-Modellierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -4314,7 +4313,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Paul",
@@ -4323,8 +4322,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - 3D-Modellierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -4346,7 +4345,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Paul",
@@ -4355,8 +4354,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - 3D-Modellierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -4378,7 +4377,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Paul",
@@ -4387,8 +4386,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - 3D-Modellierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "17:15:00",
@@ -4410,7 +4409,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Paul",
@@ -4419,8 +4418,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - 3D-Modellierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "17:15:00",
@@ -4442,7 +4441,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Paul",
@@ -4451,8 +4450,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "14-täglich",
             "day": "Montag",
             "starttime": "08:00:00",
@@ -4468,7 +4467,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -4477,8 +4476,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "14-täglich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -4494,7 +4493,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -4503,8 +4502,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "14-täglich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -4520,7 +4519,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -4529,8 +4528,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "14-täglich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -4546,7 +4545,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -4555,8 +4554,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "14-täglich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -4570,7 +4569,7 @@ var vlvz = {
                 "05.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -4579,8 +4578,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "14-täglich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -4594,7 +4593,7 @@ var vlvz = {
                 "05.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -4603,8 +4602,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -4619,7 +4618,7 @@ var vlvz = {
                 "06.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -4628,8 +4627,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -4644,7 +4643,7 @@ var vlvz = {
                 "06.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -4653,8 +4652,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -4669,7 +4668,7 @@ var vlvz = {
                 "06.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -4678,8 +4677,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -4694,7 +4693,7 @@ var vlvz = {
                 "06.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -4703,8 +4702,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "14-täglich",
             "day": "Montag",
             "starttime": "08:00:00",
@@ -4718,7 +4717,7 @@ var vlvz = {
                 "03.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -4727,8 +4726,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "14-täglich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -4742,7 +4741,7 @@ var vlvz = {
                 "03.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -4751,8 +4750,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -4768,7 +4767,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -4777,8 +4776,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -4794,7 +4793,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -4803,8 +4802,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "8. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "8",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -4820,7 +4819,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -4829,8 +4828,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Medienproduktion - AV-Produktion",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "8. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "8",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -4846,7 +4845,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.012/335-338 MediaLab Studio und AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -4855,8 +4854,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Animationsprogrammierung mit Processing",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -4878,7 +4877,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.012 Medienlabor",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -4887,8 +4886,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Animationsprogrammierung mit Processing",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -4910,7 +4909,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.012 Medienlabor",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -4919,8 +4918,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsdesign",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -4942,7 +4941,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -4951,8 +4950,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsdesign",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "11:40:00",
@@ -4974,7 +4973,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -4983,15 +4982,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsdesign",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "09:50:00",
             "endtime": "15:15:00",
             "dates": ["17.01.2020"],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -5000,15 +4999,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsdesign",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "08:00:00",
             "endtime": "17:00:00",
             "dates": ["07.02.2020"],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -5017,8 +5016,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Konzepte der Android-Programmierung",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -5040,7 +5039,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -5049,8 +5048,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Konzepte der Android-Programmierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -5072,7 +5071,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -5081,8 +5080,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Embedded Networking",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -5105,7 +5104,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Oleg",
@@ -5114,8 +5113,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Embedded Networking",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "17:15:00",
@@ -5138,7 +5137,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Oleg",
@@ -5147,8 +5146,8 @@ var vlvz = {
         },
         {
             "courseTitle": "TCP/IP-Programmierung",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "17:15:00",
@@ -5170,7 +5169,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Peter",
@@ -5179,8 +5178,8 @@ var vlvz = {
         },
         {
             "courseTitle": "TCP/IP-Programmierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -5202,7 +5201,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Peter",
@@ -5211,8 +5210,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mikrocontrollerprogrammierung",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -5234,7 +5233,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.131 ESLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martin",
@@ -5243,8 +5242,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mikrocontrollerprogrammierung",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -5266,7 +5265,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.131 ESLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martin",
@@ -5275,8 +5274,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Netz- und Systemmanagement",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "08:00:00",
@@ -5296,7 +5295,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anatol",
@@ -5305,8 +5304,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Netz- und Systemmanagement",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -5326,7 +5325,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anatol",
@@ -5335,8 +5334,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Continous Integration in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "08:00:00",
@@ -5358,7 +5357,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Thomas",
@@ -5367,8 +5366,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Continous Integration in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -5390,7 +5389,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Thomas",
@@ -5399,8 +5398,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Continous Integration in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "08:00:00",
@@ -5422,7 +5421,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Thomas",
@@ -5431,8 +5430,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Continous Integration in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -5454,7 +5453,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Thomas",
@@ -5463,8 +5462,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mathematische Grundlagen der Informatik (Wirtschaftsinformatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "14-täglich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -5480,7 +5479,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -5489,8 +5488,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mathematische Grundlagen der Informatik (Wirtschaftsinformatik)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -5512,7 +5511,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -5522,7 +5521,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik (Wirtschaftsinformatik)",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "11:40:00",
@@ -5543,7 +5542,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -5553,7 +5552,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik (Wirtschaftsinformatik)",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -5566,7 +5565,7 @@ var vlvz = {
                 "19.11.2019"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -5576,7 +5575,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik (Wirtschaftsinformatik)",
             "courseType": "Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -5598,7 +5597,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -5608,7 +5607,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematische Grundlagen der Informatik (Wirtschaftsinformatik)",
             "courseType": "Übung",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -5630,7 +5629,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "34.-108 Seminarraum",
-            "building": "Gebäude 34",
+            "building": "gebäude34",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -5639,8 +5638,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -5662,7 +5661,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5671,8 +5670,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -5694,7 +5693,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5703,8 +5702,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -5727,7 +5726,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5736,8 +5735,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -5760,7 +5759,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5769,8 +5768,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -5793,7 +5792,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5802,8 +5801,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "14-täglich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -5817,7 +5816,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5826,8 +5825,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "14-täglich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -5839,7 +5838,7 @@ var vlvz = {
                 "04.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5848,8 +5847,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -5861,7 +5860,7 @@ var vlvz = {
                 "06.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5870,8 +5869,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -5885,7 +5884,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5894,8 +5893,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "14-täglich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -5909,7 +5908,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5918,8 +5917,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "14-täglich",
             "day": "Dienstag",
             "starttime": "17:15:00",
@@ -5931,7 +5930,7 @@ var vlvz = {
                 "04.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5940,8 +5939,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "14-täglich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -5953,7 +5952,7 @@ var vlvz = {
                 "03.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5962,8 +5961,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kommunikationsnetze und -protokolle",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "8. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "8",
             "rhythm": "14-täglich",
             "day": "Dienstag",
             "starttime": "17:15:00",
@@ -5977,7 +5976,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Werner",
@@ -5986,8 +5985,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Rechnerarchitektur und verteilte Systeme",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -6002,7 +6001,7 @@ var vlvz = {
                 "28.11.2019"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Peter",
@@ -6011,8 +6010,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Rechnerarchitektur und verteilte Systeme",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -6028,7 +6027,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -6037,8 +6036,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Rechnerarchitektur und verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -6053,7 +6052,7 @@ var vlvz = {
                 "03.12.2019"
             ],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Peter",
@@ -6062,8 +6061,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Rechnerarchitektur und verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -6078,7 +6077,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -6087,8 +6086,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Rechnerarchitektur und verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -6103,7 +6102,7 @@ var vlvz = {
                 "03.12.2019"
             ],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Peter",
@@ -6112,8 +6111,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Rechnerarchitektur und verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -6128,7 +6127,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -6137,8 +6136,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Rechnerarchitektur und verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -6153,7 +6152,7 @@ var vlvz = {
                 "03.12.2019"
             ],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Peter",
@@ -6162,8 +6161,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Rechnerarchitektur und verteilte Systeme",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -6178,7 +6177,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -6187,8 +6186,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Methoden des Software Engineering",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -6210,7 +6209,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Judit",
@@ -6219,8 +6218,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Methoden des Software Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "08:00:00",
@@ -6242,7 +6241,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Judit",
@@ -6251,8 +6250,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Methoden des Software Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -6274,7 +6273,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Judit",
@@ -6283,8 +6282,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Methoden des Software Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -6306,7 +6305,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Judit",
@@ -6315,8 +6314,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Projektmanagement",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "08:00:00",
@@ -6339,7 +6338,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Philipp",
@@ -6348,8 +6347,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Projektmanagement",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -6372,7 +6371,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Philipp",
@@ -6381,8 +6380,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Projektmanagement",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -6405,7 +6404,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Philipp",
@@ -6414,8 +6413,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Wirtschaftsinformatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -6437,7 +6436,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Oliver",
@@ -6446,8 +6445,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Wirtschaftsinformatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "13:45:00",
@@ -6469,7 +6468,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Uwe",
@@ -6478,15 +6477,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Wirtschaftsinformatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "08:00:00",
             "endtime": "17:00:00",
             "dates": ["18.10.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -6495,8 +6494,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Wirtschaftsinformatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -6514,7 +6513,7 @@ var vlvz = {
                 "14.01.2020"
             ],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -6523,15 +6522,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Wirtschaftsinformatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "08:00:00",
             "endtime": "17:00:00",
             "dates": ["01.11.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -6540,15 +6539,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Wirtschaftsinformatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "08:00:00",
             "endtime": "17:00:00",
             "dates": ["29.11.2019"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -6557,15 +6556,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Wirtschaftsinformatik",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "08:00:00",
             "endtime": "17:00:00",
             "dates": ["17.01.2020"],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Stefan",
@@ -6574,8 +6573,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Controlling und IT Controlling",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -6598,7 +6597,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -6607,8 +6606,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Controlling und IT Controlling",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -6630,7 +6629,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -6639,8 +6638,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Audioprogrammierung",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -6662,7 +6661,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.012 Medienlabor",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -6671,8 +6670,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kostenrechnung",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -6695,7 +6694,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -6704,8 +6703,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Kostenrechnung",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -6727,7 +6726,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Volker",
@@ -6736,8 +6735,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendesign",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "08:00:00",
@@ -6759,7 +6758,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -6768,8 +6767,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendesign",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -6791,7 +6790,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -6800,8 +6799,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendesign",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "13:45:00",
@@ -6823,7 +6822,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Judit",
@@ -6832,8 +6831,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendesign",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -6855,7 +6854,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -6864,8 +6863,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendesign",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "13:45:00",
@@ -6887,7 +6886,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ludwig",
@@ -6896,8 +6895,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendesign",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "11:40:00",
@@ -6919,7 +6918,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Judit",
@@ -6928,8 +6927,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendesign",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "11:40:00",
@@ -6951,7 +6950,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ludwig",
@@ -6960,8 +6959,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mathematik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -6983,7 +6982,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -6993,7 +6992,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematik",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -7014,7 +7013,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "34.-108 Seminarraum",
-            "building": "Gebäude 34",
+            "building": "gebäude34",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -7024,7 +7023,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematik",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -7045,7 +7044,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Torsten",
@@ -7055,7 +7054,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematik",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -7076,7 +7075,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Torsten",
@@ -7086,7 +7085,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematik",
             "courseType": "Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -7107,7 +7106,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "34.-108 Seminarraum",
-            "building": "Gebäude 34",
+            "building": "gebäude34",
             "lecturer": {
                 "degree": "",
                 "firstname": "Torsten",
@@ -7117,7 +7116,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematik",
             "courseType": "Übung",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -7138,7 +7137,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "43.006 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas",
@@ -7148,7 +7147,7 @@ var vlvz = {
         {
             "courseTitle": "Mathematik",
             "courseType": "Übung",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "parallelGroupValue": "6",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -7169,7 +7168,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "34.-108 Seminarraum",
-            "building": "Gebäude 34",
+            "building": "gebäude34",
             "lecturer": {
                 "degree": "",
                 "firstname": "Torsten",
@@ -7178,8 +7177,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -7201,7 +7200,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "52.009 Mehrzweckraum (ohne Bühne)",
-            "building": "Gebäude 52",
+            "building": "gebäude52",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7211,7 +7210,7 @@ var vlvz = {
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -7233,7 +7232,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7243,7 +7242,7 @@ var vlvz = {
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -7265,7 +7264,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7275,7 +7274,7 @@ var vlvz = {
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -7297,7 +7296,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7307,7 +7306,7 @@ var vlvz = {
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
             "courseType": "Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "17:15:00",
@@ -7329,7 +7328,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7339,7 +7338,7 @@ var vlvz = {
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
             "courseType": "Übung",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -7361,7 +7360,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7371,7 +7370,7 @@ var vlvz = {
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
             "courseType": "Übung",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "parallelGroupValue": "6",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -7393,7 +7392,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7402,15 +7401,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "18:00:00",
             "dates": ["21.10.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Merete",
@@ -7419,15 +7418,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "15:00:00",
             "dates": ["04.11.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7436,15 +7435,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "17:00:00",
             "dates": ["11.11.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -7453,15 +7452,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["23.11.2019"],
             "room": "46.332-338 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dennis",
@@ -7470,15 +7469,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "16:30:00",
             "dates": ["09.12.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan",
@@ -7487,15 +7486,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["18.01.2020"],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -7504,15 +7503,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "18:00:00",
             "dates": ["26.10.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Merete",
@@ -7521,15 +7520,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["09.11.2019"],
             "room": "46.332-338 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dennis",
@@ -7538,15 +7537,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "15:00:00",
             "dates": ["16.11.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7555,15 +7554,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "17:00:00",
             "dates": ["07.12.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -7572,15 +7571,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "16:30:00",
             "dates": "16.12.2019",
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan",
@@ -7589,15 +7588,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["13.01.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -7606,15 +7605,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "18:00:00",
             "dates": ["28.10.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Merete",
@@ -7623,15 +7622,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["02.11.2019"],
             "room": "46.332-338 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dennis",
@@ -7640,15 +7639,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "17:00:00",
             "dates": ["18.11.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -7657,15 +7656,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "15:00:00",
             "dates": ["25.11.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7674,15 +7673,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "16:30:00",
             "dates": ["13.01.2020"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan",
@@ -7691,15 +7690,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["20.01.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -7708,15 +7707,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "15:00:00",
             "dates": ["28.10.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7725,15 +7724,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "18:00:00",
             "dates": ["09.11.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Merete",
@@ -7742,15 +7741,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["16.11.2019"],
             "room": "46.332-338 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dennis",
@@ -7759,15 +7758,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "17:00:00",
             "dates": ["25.11.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -7776,15 +7775,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "16:30:00",
             "dates": ["18.01.2020"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan",
@@ -7793,15 +7792,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["27.01.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -7810,15 +7809,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "17:00:00",
             "dates": ["04.11.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -7827,15 +7826,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "18:00:00",
             "dates": ["18.11.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Merete",
@@ -7844,15 +7843,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "15:00:00",
             "dates": ["02.12.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7861,15 +7860,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["07.12.2019"],
             "room": "46.332-338 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dennis",
@@ -7878,15 +7877,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["16.12.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -7895,15 +7894,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "16:30:00",
             "dates": ["20.01.2020"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan",
@@ -7912,15 +7911,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "17:00:00",
             "dates": ["21.10.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Anna Theresa",
@@ -7929,15 +7928,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "09:00:00",
             "endtime": "15:00:00",
             "dates": ["11.11.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -7946,15 +7945,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:00:00",
             "endtime": "18:00:00",
             "dates": ["23.11.2019"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Merete",
@@ -7963,15 +7962,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["30.11.2019"],
             "room": "46.332-338 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dennis",
@@ -7980,15 +7979,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "15:30:00",
             "dates": ["09.12.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Nicolas Julian",
@@ -7997,15 +7996,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltungsgrundlagen und Medienwerkzeuge",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Montag",
             "starttime": "08:00:00",
             "endtime": "16:30:00",
             "dates": ["27.01.2020"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan",
@@ -8014,8 +8013,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -8037,7 +8036,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8047,7 +8046,7 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "ungerade Wochen",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -8062,7 +8061,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8072,14 +8071,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Donnerstag",
             "starttime": "11:40:00",
             "endtime": "13:10:00",
             "dates": ["14.11.2019"],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8089,14 +8088,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["22.01.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8106,14 +8105,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["05.02.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8123,7 +8122,7 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "ungerade Wochen",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -8138,7 +8137,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8148,14 +8147,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Donnerstag",
             "starttime": "09:50:00",
             "endtime": "11:20:00",
             "dates": ["14.11.2019"],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8165,14 +8164,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["22.01.2020"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8182,14 +8181,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "parallelGroupValue": "2",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["05.02.2020"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8199,7 +8198,7 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "ungerade Wochen",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -8215,7 +8214,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8225,14 +8224,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["22.01.2020"],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8242,14 +8241,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "parallelGroupValue": "3",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["05.02.2020"],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -8260,7 +8259,7 @@ var vlvz = {
             "courseNumber": "AI1012Ü2",
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "parallelGroupValue": "4",
             "rhythm": "ungerade Wochen",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -8275,7 +8274,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8286,14 +8285,14 @@ var vlvz = {
             "courseNumber": "AI1012Ü2",
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["29.01.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8304,14 +8303,14 @@ var vlvz = {
             "courseNumber": "AI1012Ü2",
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "parallelGroupValue": "4",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["12.02.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8321,7 +8320,7 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "parallelGroupValue": "5",
             "rhythm": "ungerade Wochen",
             "day": "Freitag",
             "starttime": "08:00:00",
@@ -8336,7 +8335,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8346,14 +8345,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["29.01.2020"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8363,14 +8362,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "parallelGroupValue": "5",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["12.02.2020"],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8380,7 +8379,7 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "parallelGroupValue": "6",
             "rhythm": "ungerade Wochen",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -8396,7 +8395,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8406,14 +8405,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["22.01.2020"],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8423,14 +8422,14 @@ var vlvz = {
         {
             "courseTitle": "Algorithmen und Datenstrukturen (Digitale Medien)",
             "courseType": "Übung",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "parallelGroupValue": "6",
             "rhythm": "Einzeltermin",
             "day": "Mittwoch",
             "starttime": "14:00:00",
             "endtime": "18:30:00",
             "dates": ["05.02.2020"],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuel",
@@ -8439,8 +8438,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:45:00",
@@ -8462,7 +8461,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Birgit",
@@ -8471,8 +8470,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "13:45:00",
@@ -8493,7 +8492,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Isabella",
@@ -8502,8 +8501,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering (Wiederholer)",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -8525,7 +8524,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8534,8 +8533,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering (Wiederholer)",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -8557,7 +8556,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8566,8 +8565,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "08:00:00",
@@ -8588,7 +8587,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8597,8 +8596,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -8619,7 +8618,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8628,8 +8627,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "08:00:00",
@@ -8651,7 +8650,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8660,8 +8659,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -8683,7 +8682,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8692,8 +8691,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -8715,7 +8714,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Isabella",
@@ -8724,8 +8723,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -8747,7 +8746,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Isabella",
@@ -8756,8 +8755,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -8779,7 +8778,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8788,8 +8787,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "08:00:00",
@@ -8810,7 +8809,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8819,8 +8818,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -8841,7 +8840,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Dominik",
@@ -8850,8 +8849,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Usability Engineering",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "8. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "8",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -8873,7 +8872,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.332-334 MediaLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christian",
@@ -8882,8 +8881,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Recht",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -8906,7 +8905,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -8915,8 +8914,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Recht",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -8939,7 +8938,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -8948,8 +8947,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Recht",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:40:00",
@@ -8972,7 +8971,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.009 Hörsaal",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -8981,8 +8980,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Recht",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -9005,7 +9004,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -9014,8 +9013,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "15:30:00",
@@ -9037,7 +9036,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -9046,8 +9045,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "08:00:00",
@@ -9070,7 +9069,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -9079,8 +9078,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "08:00:00",
@@ -9102,7 +9101,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -9111,8 +9110,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -9135,7 +9134,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Helena",
@@ -9144,8 +9143,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -9168,7 +9167,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -9177,8 +9176,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -9200,7 +9199,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Helena",
@@ -9209,8 +9208,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "5. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "5",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -9232,7 +9231,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Annika",
@@ -9241,8 +9240,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "6. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "6",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -9264,7 +9263,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Helena",
@@ -9273,8 +9272,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Mediendidaktik und E-Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "7. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "7",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "09:50:00",
@@ -9296,7 +9295,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "51.209 Softwarelabor 3",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Helena",
@@ -9305,8 +9304,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Digitale Medien",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "08:00:00",
@@ -9329,7 +9328,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Axel",
@@ -9338,8 +9337,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Digitale Medien",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -9361,7 +9360,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Axel",
@@ -9370,8 +9369,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Digitale Medien",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -9393,7 +9392,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -9402,8 +9401,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Digitale Medien",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -9425,7 +9424,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "51.203 WI Labor",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jan-Torsten",
@@ -9434,8 +9433,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Digitale Medien",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -9457,7 +9456,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.131 ESLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Peter",
@@ -9466,8 +9465,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Digitale Medien",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -9489,7 +9488,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.131 ESLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Peter",
@@ -9498,8 +9497,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Digitale Medien",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "08:00:00",
@@ -9522,7 +9521,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Steffen",
@@ -9531,8 +9530,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Bachelor-Projekt Digitale Medien",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "4. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "4",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -9555,7 +9554,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Steffen",
@@ -9564,15 +9563,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltung in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:50:00",
             "endtime": "18:00:00",
             "dates": ["16.11.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuela",
@@ -9581,15 +9580,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltung in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "08:00:00",
             "endtime": "18:00:00",
             "dates": ["23.11.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuela",
@@ -9598,15 +9597,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltung in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:50:00",
             "endtime": "18:00:00",
             "dates": ["30.11.2019"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuela",
@@ -9615,15 +9614,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltung in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:50:00",
             "endtime": "18:00:00",
             "dates": ["11.01.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuela",
@@ -9632,15 +9631,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltung in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:50:00",
             "endtime": "18:45:00",
             "dates": ["18.01.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuela",
@@ -9649,15 +9648,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Gestaltung in der Praxis",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:50:00",
             "endtime": "18:00:00",
             "dates": ["25.01.2020"],
             "room": "51.103 Softwarelabor 1",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Manuela",
@@ -9666,8 +9665,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Handlungsfelder der Gesundheitstechnik (Projektarbeit)",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -9689,7 +9688,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "30.002 Seminarraum",
-            "building": "Gebäude 30",
+            "building": "gebäude30",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jens",
@@ -9698,8 +9697,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Handlungsfelder der Gesundheitstechnik (Projektarbeit)",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "09:50:00",
@@ -9721,7 +9720,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "30.218 Seminarraum",
-            "building": "Gebäude 30",
+            "building": "gebäude30",
             "lecturer": {
                 "degree": "",
                 "firstname": "Solveig",
@@ -9730,8 +9729,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Vitalfunktionen verstehen und erhalten",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "13:30:00",
@@ -9752,7 +9751,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "31.302 Seminarraum",
-            "building": "Gebäude 31",
+            "building": "gebäude31",
             "lecturer": {
                 "degree": "",
                 "firstname": "Johanna",
@@ -9761,8 +9760,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Vitalfunktionen verstehen und erhalten",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "10:00:00",
@@ -9782,7 +9781,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "31.005 Seminarraum",
-            "building": "Gebäude 31",
+            "building": "gebäude31",
             "lecturer": {
                 "degree": "",
                 "firstname": "Johanna",
@@ -9792,7 +9791,7 @@ var vlvz = {
         {
             "courseTitle": "Vitalfunktionen verstehen und erhalten",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "14-täglich",
             "day": "Dienstag",
             "starttime": "13:30:00",
@@ -9807,7 +9806,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "31.119 Unterrichtsgrossraum",
-            "building": "Gebäude 31",
+            "building": "gebäude31",
             "lecturer": {
                 "degree": "",
                 "firstname": "Henny Annette",
@@ -9817,7 +9816,7 @@ var vlvz = {
         {
             "courseTitle": "Methoden der empirischen Sozialforschung und Epidemiologie",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -9838,7 +9837,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "31.004 Evidenzlabor",
-            "building": "Gebäude 31",
+            "building": "gebäude31",
             "lecturer": {
                 "degree": "",
                 "firstname": "Katharina",
@@ -9848,7 +9847,7 @@ var vlvz = {
         {
             "courseTitle": "Methoden der empirischen Sozialforschung und Epidemiologie",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:45:00",
@@ -9869,7 +9868,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "31.004 Evidenzlabor",
-            "building": "Gebäude 31",
+            "building": "gebäude31",
             "lecturer": {
                 "degree": "",
                 "firstname": "Julia",
@@ -9879,7 +9878,7 @@ var vlvz = {
         {
             "courseTitle": "Methoden der empirischen Sozialforschung und Epidemiologie",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "11:30:00",
@@ -9900,7 +9899,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "25.205 Seminarraum",
-            "building": "Gebäude 25",
+            "building": "gebäude25",
             "lecturer": {
                 "degree": "",
                 "firstname": "Lita",
@@ -9910,7 +9909,7 @@ var vlvz = {
         {
             "courseTitle": "Methoden der empirischen Sozialforschung und Epidemiologie",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "14-täglich",
             "day": "Donnerstag",
             "starttime": "13:30:00",
@@ -9926,7 +9925,7 @@ var vlvz = {
 
             ],
             "room": "31.004 Evidenzlabor",
-            "building": "Gebäude 31",
+            "building": "gebäude31",
             "lecturer": {
                 "degree": "",
                 "firstname": "Andreas Walter",
@@ -9936,7 +9935,7 @@ var vlvz = {
         {
             "courseTitle": "Eingebettete Systeme",
             "courseType": "Vorlesung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -9958,7 +9957,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "30.016 Hörsaal",
-            "building": "Gebäude 30",
+            "building": "gebäude30",
             "lecturer": {
                 "degree": "",
                 "firstname": "Viviane",
@@ -9968,7 +9967,7 @@ var vlvz = {
         {
             "courseTitle": "Eingebettete Systeme",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -9990,7 +9989,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "30.016 Hörsaal",
-            "building": "Gebäude 30",
+            "building": "gebäude30",
             "lecturer": {
                 "degree": "",
                 "firstname": "Viviane",
@@ -9999,8 +9998,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Regelungstechnik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -10022,7 +10021,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "30.218 Seminarraum",
-            "building": "Gebäude 30",
+            "building": "gebäude30",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jens",
@@ -10031,8 +10030,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Regelungstechnik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:30:00",
@@ -10054,7 +10053,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "30.218 Seminarraum",
-            "building": "Gebäude 30",
+            "building": "gebäude30",
             "lecturer": {
                 "degree": "",
                 "firstname": "Jens",
@@ -10063,15 +10062,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Arbeits- und Führungstechniken",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "09:50:00",
             "endtime": "17:00:00",
             "dates": ["15.11.2019"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Bernhard",
@@ -10080,15 +10079,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Arbeits- und Führungstechniken",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:50:00",
             "endtime": "17:00:00",
             "dates": ["16.11.2019"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Bernhard",
@@ -10097,15 +10096,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Arbeits- und Führungstechniken",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "09:50:00",
             "endtime": "17:00:00",
             "dates": ["06.12.2019"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Bernhard",
@@ -10114,15 +10113,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Arbeits- und Führungstechniken",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:50:00",
             "endtime": "17:00:00",
             "dates": ["07.12.2019"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Bernhard",
@@ -10131,15 +10130,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Arbeits- und Führungstechniken",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Freitag",
             "starttime": "09:50:00",
             "endtime": "17:00:00",
             "dates": ["17.01.2020"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Bernhard",
@@ -10148,15 +10147,15 @@ var vlvz = {
         },
         {
             "courseTitle": "Arbeits- und Führungstechniken",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "Einzeltermin",
             "day": "Samstag",
             "starttime": "09:50:00",
             "endtime": "17:00:00",
             "dates": ["18.01.2020"],
             "room": "43.103 Unterrichtsraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Bernhard",
@@ -10165,8 +10164,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Teamprojekt",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "17:15:00",
@@ -10189,7 +10188,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -10198,8 +10197,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Teamprojekt",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -10221,7 +10220,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -10230,8 +10229,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Teamprojekt",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "19:00:00",
@@ -10253,7 +10252,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -10262,8 +10261,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Advanced Computer Networks",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "17:15:00",
@@ -10284,7 +10283,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -10293,8 +10292,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Advanced Computer Networks",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "19:00:00",
@@ -10315,7 +10314,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.133 NetLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -10324,8 +10323,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Diskrete Mathematik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -10347,7 +10346,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -10356,8 +10355,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Diskrete Mathematik",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -10379,7 +10378,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Ulrich",
@@ -10388,8 +10387,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Verteilte Anwendungen",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -10412,7 +10411,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -10421,8 +10420,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Verteilte Anwendungen",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "15:30:00",
@@ -10445,7 +10444,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -10454,8 +10453,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Verteilte Datenbanken",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -10477,7 +10476,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -10486,8 +10485,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Verteilte Datenbanken",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -10509,7 +10508,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -10518,8 +10517,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Computer Graphics",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "17:15:00",
@@ -10541,7 +10540,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Karsten",
@@ -10550,8 +10549,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Computer Graphics",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -10573,7 +10572,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Karsten",
@@ -10582,8 +10581,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Special Topic of Global Software Development",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "13:45:00",
@@ -10606,7 +10605,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "43.106 Seminarraum",
-            "building": "Gebäude 43",
+            "building": "gebäude43",
             "lecturer": {
                 "degree": "",
                 "firstname": "Christoph",
@@ -10615,8 +10614,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Machine Learning",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "09:50:00",
@@ -10638,7 +10637,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Alexander",
@@ -10647,8 +10646,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Machine Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -10670,7 +10669,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Alexander",
@@ -10679,8 +10678,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Machine Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -10702,7 +10701,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Monika",
@@ -10711,8 +10710,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Machine Learning",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "3. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "3",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "11:40:00",
@@ -10735,7 +10734,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.139 MacLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Alexander",
@@ -10744,8 +10743,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Building Web and Mobile Apps",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "15:30:00",
@@ -10766,7 +10765,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.107 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Muneeb",
@@ -10775,8 +10774,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Building Web and Mobile Apps",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "17:15:00",
@@ -10796,7 +10795,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Muneeb",
@@ -10805,8 +10804,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Building Web and Mobile Apps",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "19:00:00",
@@ -10826,7 +10825,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Muneeb",
@@ -10835,8 +10834,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Middleware",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "08:00:00",
@@ -10858,7 +10857,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -10867,8 +10866,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Middleware",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "09:50:00",
@@ -10890,7 +10889,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -10899,8 +10898,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Parallel Programming",
-            "courseType": "Seminaristischer Unterricht",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "11:40:00",
@@ -10922,7 +10921,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -10931,8 +10930,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Parallel Programming",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Freitag",
             "starttime": "13:45:00",
@@ -10954,7 +10953,7 @@ var vlvz = {
                 "14.02.2020"
             ],
             "room": "46.129 LinuxLab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Tim",
@@ -10963,8 +10962,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Test Oriented Development",
-            "courseType": "Seminar",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Vorlesung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "08:00:00",
@@ -10986,7 +10985,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.112 Unterrichtsraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -10995,8 +10994,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Test Oriented Development",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "09:50:00",
@@ -11018,7 +11017,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -11027,8 +11026,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Test Oriented Development",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Montag",
             "starttime": "15:30:00",
@@ -11048,7 +11047,7 @@ var vlvz = {
                 "10.02.2020"
             ],
             "room": "46.121 Softwarelabor 4",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Martine",
@@ -11057,8 +11056,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Global Distributed Software Development",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Donnerstag",
             "starttime": "17:15:00",
@@ -11081,7 +11080,7 @@ var vlvz = {
                 "13.02.2020"
             ],
             "room": "51.111 Softwarelabor 2",
-            "building": "Gebäude 51",
+            "building": "gebäude51",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -11090,8 +11089,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Global Distributed Software Development",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "19:00:00",
@@ -11113,7 +11112,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -11122,8 +11121,8 @@ var vlvz = {
         },
         {
             "courseTitle": "Global Distributed Software Development",
-            "courseType": "Praktikum",
-            "parallelGroupValue": "2. Parallelgruppe",
+            "courseType": "Übung",
+            "parallelGroupValue": "2",
             "rhythm": "wöchentlich",
             "day": "Mittwoch",
             "starttime": "11:40:00",
@@ -11145,7 +11144,7 @@ var vlvz = {
                 "12.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Rainer",
@@ -11155,7 +11154,7 @@ var vlvz = {
         {
             "courseTitle": "Intercultural Communication",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "11:40:00",
@@ -11177,7 +11176,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Agata Puspitasari",
@@ -11187,7 +11186,7 @@ var vlvz = {
         {
             "courseTitle": "Intercultural Communication",
             "courseType": "Übung",
-            "parallelGroupValue": "1. Parallelgruppe",
+            "parallelGroupValue": "1",
             "rhythm": "wöchentlich",
             "day": "Dienstag",
             "starttime": "13:45:00",
@@ -11209,7 +11208,7 @@ var vlvz = {
                 "11.02.2020"
             ],
             "room": "46.105 Seminarraum",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
             "lecturer": {
                 "degree": "",
                 "firstname": "Agata Puspitasari",
@@ -11226,7 +11225,7 @@ var vlvz = {
             "phone": "+49 661 9640-332",
             "mail": "jan-torsten.milde(at)informatik.hs-fulda.de",
             "room": "46.012 AV-Lab",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
         },
         {
             "name": "Birgit Bomsdorf",
@@ -11236,7 +11235,7 @@ var vlvz = {
             "phone": "+49 661 9640-327",
             "mail": "birgit.bomsdorf(at)informatik.hs-fulda.de",
             "room": "46.328",
-            "building": "Gebäude 46",
+            "building": "gebäude46",
         },
     ]
 };
@@ -11276,37 +11275,34 @@ router.all('/ssc', function(req, res, next) {
 router.all('/datenbank', function(req, res, next) { 
   console.log(req.body);
   
-  //CHANGE = "1";
-  //ADRESSE = req.body.obj.modul;
-  
+  var adress = "placeholder";
   //Fehlervermeidung bei leeren Objekten
-  try {
+ try{
     //Worum geht es
-    switch(req.body.obj.typ){
+    switch(req.body.typ){
       //Modul
-      case '1':
-        //Was will man wissen
-        switch(req.body.obj.subtyp){
-          //Wer hält Modul
-          case '1': 
-            var name = "Keine Übereinstimmung";
-            for (var i = 0; i < vlvz.module.length; i++) {
-              if (vlvz.module[i].courseTitle == req.body.obj.modul) {
-                name = vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname;
-                console.log(name);
-                break;
-              }
-            }
-            break;
-          default: console.log("Case subtyp doesn't work");
-        }
+      case '1':{
+        //Vorlesungsseite
+	adress = "http://ai-info.informatik.hs-fulda.de:443/htdocs/vorlesung.html";	    
+	for (var i = 0; i < vlvz.module.length; i++) {
+	  if (vlvz.module[i].courseTitle == req.body.modul && vlvz.module[i].courseType == req.body.art) { 
+	    var image = (vlvz.module[i].lecturer.surname).toLowerCase();
+	    adress += "?modname=" + vlvz.module[i].courseTitle + "&modroom=" + vlvz.module[i].room + "&modrythm=" + vlvz.module[i].rhythm + "&modprof=" + vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname + "&modprofimg=../images/"  + image + ".jpg" + "&modimg=../images/" + vlvz.module[i].building + ".png";
+	    break;
+	  }
+	}
         break;
+      }
       default: console.log("Case typ doesn't work");
     }
+ } catch(err){
+ 	console.log("no info");
+ }
     
-  } catch(err) {
-    console.log("no info");
-  }
+  
+	
+  CHANGE = "1";
+  ADRESSE = adress;
   
   res.send("ok: datenbank");
 });
