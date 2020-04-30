@@ -11285,7 +11285,7 @@ router.all('/datenbank', function(req, res, next) {
         //Vorlesungsseite
 	adress = "http://ai-info.informatik.hs-fulda.de:443/htdocs/vorlesung.html";	    
 	for (var i = 0; i < vlvz.module.length; i++) {
-	  if (vlvz.module[i].courseTitle == req.body.modul && vlvz.module[i].courseType == req.body.art) { 
+	  if (vlvz.module[i].courseTitle == req.body.modul && vlvz.module[i].courseType == req.body.art && (vlvz.module[i].parallelGroupValue == req.body.gruppe || req.body.gruppe == 0)) { 
 	    var image = (vlvz.module[i].lecturer.surname).toLowerCase();
 	    adress += "?modname=" + vlvz.module[i].courseTitle + "&modroom=" + vlvz.module[i].room + "&modrythm=" + vlvz.module[i].rhythm + "&modprof=" + vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname + "&modprofimg=../images/"  + image + ".jpg" + "&modimg=../images/" + vlvz.module[i].building + ".png";
 	    break;
