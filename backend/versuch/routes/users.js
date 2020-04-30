@@ -11287,7 +11287,7 @@ router.all('/datenbank', function(req, res, next) {
 	for (var i = 0; i < vlvz.module.length; i++) {
 	  if (vlvz.module[i].courseTitle == req.body.modul && vlvz.module[i].courseType == req.body.art) { 
 	    var image = (vlvz.module[i].lecturer.surname).toLowerCase();
-	    adress += "?modname=" + vlvz.module[i].courseTitle + "&modroom=" + vlvz.module[i].room + "&modrythm=" + vlvz.module[i].rhythm + "&modprof=" + vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname + "&modprofimg="  + image + ".jpg";
+	    adress += "?modname=" + vlvz.module[i].courseTitle + "&modroom=" + vlvz.module[i].room + "&modrythm=" + vlvz.module[i].rhythm + "&modprof=" + vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname + "&modprofimg=../images/"  + image + ".jpg" + "&modimg=../images/" + vlvz.module[i].building + ".png";
 	    break;
 	  }
 	}
