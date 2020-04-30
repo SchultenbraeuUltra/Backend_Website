@@ -11277,7 +11277,7 @@ router.all('/datenbank', function(req, res, next) {
   
   
   //Fehlervermeidung bei leeren Objekten
- 
+ try{
     //Worum geht es
     switch(req.body.obj.typ){
       //Modul
@@ -11285,32 +11285,18 @@ router.all('/datenbank', function(req, res, next) {
         //Vorlesungsseite
 	var adress = "http://ai-info.informatik.hs-fulda.de:443/htdocs/vorlesung.html";	    
 	for (var i = 0; i < vlvz.module.length; i++) {
-	try{
-	  if(req.body.obj.gruppe == 0){
 	    if (vlvz.module[i].courseTitle == req.body.obj.modul && vlvz.module[i].courseType == req.body.obj.art) { 
-		try{
-	    var image = (vlvz.module[i].lecturer.surname).toLowerCase();
-	    adress += "?modname=" + vlvz.module[i].courseTitle + "&modroom=" + vlvz.module[i].room + "&modrythm=" + vlvz.module[i].rythm + "&modprof=" + vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname + "&modprofimg=" + image + ".jpg";
-		} catch(err){
-		console.log("adresse erstellen");
-		}
+	    //var image = (vlvz.module[i].lecturer.surname).toLowerCase();
+	    adress += "?modname=" + vlvz.module[i].courseTitle + "&modroom=" + vlvz.module[i].room + "&modrythm=" + vlvz.module[i].rythm + "&modprof=" + vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname; //+ "&modprofimg=" + image + ".jpg";	
 	    break;
-	    }
-	  }
-	  else{
-	    if (vlvz.module[i].courseTitle == req.body.obj.modul && vlvz.module[i].courseType == req.body.obj.art && vlvz.module[i].parallelGroupValue == req.body.obj.gruppe) {
-	    var image = (vlvz.module[i].lecturer.surname).toLowerCase();
-	    adress += "?modname=" + vlvz.module[i].courseTitle + "&modroom=" + vlvz.module[i].room + "&modrythm=" + vlvz.module[i].rythm + "&modprof=" + vlvz.module[i].lecturer.firstname + " " + vlvz.module[i].lecturer.surname + "&modprofimg=" + image + ".jpg";
-            break;
-	    }
-	  }
-	} catch(err){
-    		console.log("gruppe versagt");
- 		 }
+	    }	  
 	}
         break;
       default: console.log("Case typ doesn't work");
     }
+ } catch(err){
+ 	console.log("no info");
+ }
     
   
 	
