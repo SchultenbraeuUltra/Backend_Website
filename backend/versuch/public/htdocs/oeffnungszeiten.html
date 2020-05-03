@@ -82,6 +82,30 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.onload = processURL;
+      
+    function processURL(){
+        var parameters = location.search.substring(1);
+        parameters = decodeURI(parameters);
+        var temp = parameters.split("&");
+        console.log(temp);
+        
+        if(temp){
+            temp.forEach(replaceContent);
+        }
+        
+        function replaceContent(item){
+            var pair = item.split("=");
+            if(pair[0].includes("img") == true){
+                document.getElementById(pair[0]).src = pair[1];
+            }
+            document.getElementById(pair[0]).innerHTML = pair[1];
+        }
+        
+    }
+    
+    </script>
 
 </body>
 
