@@ -11220,7 +11220,7 @@ var vlvz = { "module": [
         {
             "name": "Jan-Torsten Milde",
             "degree": "Prof. Dr.",
-			"job": "Medieninformatik und Webtechnologien",
+	    "job": "Medieninformatik und Webtechnologien",
             "time": "In der vorlesungsfreien Zeit nach Vereinbarung oder per Aushang in moodle (eLearning). ",
             "phone": "+49 661 9640-332",
             "mail": "jan-torsten.milde(at)informatik.hs-fulda.de",
@@ -11230,7 +11230,7 @@ var vlvz = { "module": [
         {
             "name": "Birgit Bomsdorf",
             "degree": "Prof. Dr.",
-			"job": "Medieninformatik, Mensch-Computer-Interaktion",
+	    "job": "Medieninformatik, Mensch-Computer-Interaktion",
             "time": "In der vorlesungsfreien Zeit nach Vereinbarung oder per Aushang in moodle (eLearning). ",
             "phone": "+49 661 9640-327",
             "mail": "birgit.bomsdorf(at)informatik.hs-fulda.de",
@@ -11275,9 +11275,9 @@ router.all('/ssc', function(req, res, next) {
 router.all('/datenbank', function(req, res, next) { 
   console.log(req.body);
   
-  var adress = "placeholder";
+  var adress = "http://ai-info.informatik.hs-fulda.de:443/htdocs/start.html";
   //Fehlervermeidung bei leeren Objekten
- try{
+  try{
     //Worum geht es
     switch(req.body.typ){
       //Modul
@@ -11293,13 +11293,23 @@ router.all('/datenbank', function(req, res, next) {
 	}
         break;
       }
+      case '2':{
+      	adress = "http://ai-info.informatik.hs-fulda.de:443/htdocs/person.html";
+	for (var i = 0; i < vlvz.sprechzeiten.length; i++) {
+	  if (vlvz.sprechzeiten[i].name == req.body.prof) { 
+	    var nameSplit = (vlvz.sprechzeiten[i].name).split(" ");
+	    var image = nameSplit[1].toLowerCase();
+	    adress += "?profheadline= &mprofname=" + vlvz.sprechzeiten[i].degree + " " + vlvz.sprechzeiten[i].name + "&profimg=../images/"  + image + ".jpg" + "&profjob=" + vlvz.sprechzeiten[i].job + "&profadress=" + vlvz.sprechzeiten[i].room + "&profcontact=" + vlvz.sprechzeiten[i].phone + "<br> <br>" + vlvz.sprechzeiten[i].mail + "&proftimes=" + vlvz.sprechzeiten[i].time;
+	    break;
+	  }
+	}
+        break;
+      }
       default: console.log("Case typ doesn't work");
     }
- } catch(err){
+  } catch(err){
  	console.log("no info");
- }
-    
-  
+  }
 	
   CHANGE = "1";
   ADRESSE = adress;
