@@ -11303,7 +11303,11 @@ router.all('/datenbank', function(req, res, next) {
 	    break;
 	  }
 	}
-        break;
+        break;     
+      }
+      case '4':{
+      	adress = "http://ai-info.informatik.hs-fulda.de:443/htdocs/oeffnungszeiten.html" + "?roomheadline=Gebäude" + req.body.gebäude + "&roomimg=../images/gebäude" + "req.body.gebäude" + ".png" + "&markierterText= &monroomtime= &tueroomtime= &wedroomtime= &thuroomtime= &friroomtime= &satroomtime= "  ;
+        break;     
       }
       default: console.log("Case typ doesn't work");
     }
