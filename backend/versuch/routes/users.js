@@ -11299,7 +11299,7 @@ router.all('/datenbank', function(req, res, next) {
 	  if (vlvz.sprechzeiten[i].name == req.body.prof) { 
 	    var nameSplit = (vlvz.sprechzeiten[i].name).split(" ");
 	    var image = nameSplit[1].toLowerCase();
-	    adress += "?profheadline= &mprofname=" + vlvz.sprechzeiten[i].degree + " " + vlvz.sprechzeiten[i].name + "&profimg=../images/"  + image + ".jpg" + "&profjob=" + vlvz.sprechzeiten[i].job + "&profadress=" + vlvz.sprechzeiten[i].room + "&profcontact=" + vlvz.sprechzeiten[i].phone + "<br> <br>" + vlvz.sprechzeiten[i].mail + "&proftimes=" + vlvz.sprechzeiten[i].time;
+	    adress += "?profheadline= &profname=" + vlvz.sprechzeiten[i].degree + " " + vlvz.sprechzeiten[i].name + "&profimg=../images/"  + image + ".jpg" + "&profjob=" + vlvz.sprechzeiten[i].job + "&profadress=" + vlvz.sprechzeiten[i].room + "&profcontact=" + vlvz.sprechzeiten[i].phone + "<br> <br>" + vlvz.sprechzeiten[i].mail + "&proftimes=" + vlvz.sprechzeiten[i].time;
 	    break;
 	  }
 	}
