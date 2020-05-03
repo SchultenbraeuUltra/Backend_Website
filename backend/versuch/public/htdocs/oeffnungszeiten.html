@@ -45,7 +45,7 @@
         <img class="variablesBild" id="roomimg" src="../images/map_gb12.png" alt="">
       </div>
       <!-- /.col-lg-8 -->
-      <div class="col-lg-5">
+      <div class="col-lg-5" id="zeiten">
 
 			<div class="row align-items-center my-5">
 				<div class="col-lg-6">
@@ -82,6 +82,30 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.onload = processURL;
+      
+    function processURL(){
+        var parameters = location.search.substring(1);
+        parameters = decodeURI(parameters);
+        var temp = parameters.split("&");
+        console.log(temp);
+        
+        if(temp){
+            temp.forEach(replaceContent);
+        }
+        
+        function replaceContent(item){
+            var pair = item.split("=");
+            if(pair[0].includes("img") == true){
+                document.getElementById(pair[0]).src = pair[1];
+            }
+            document.getElementById(pair[0]).innerHTML = pair[1];
+        }
+        
+    }
+    
+    </script>
 
 </body>
 
